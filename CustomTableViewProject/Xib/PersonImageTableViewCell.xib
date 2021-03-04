@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="233" id="KGk-i7-Jjw" customClass="PersonImageTableViewCell" customModule="CustomTableViewProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="If9-qA-iYA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="2OB-dF-Ra6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DPl-jY-C2O" appends="YES" id="cyh-3w-F2C"/>
+                                    <outletCollection property="gestureRecognizers" destination="DPl-jY-C2O" appends="YES" id="Pa2-hQ-cX3"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-personpng" translatesAutoresizingMaskIntoConstraints="NO" id="pfb-VU-sPC">
+                                <rect key="frame" x="132" y="25" width="150" height="150"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pfb-VU-sPC" secondAttribute="height" multiplier="1:1" id="RJf-X8-LwS"/>
+                                    <constraint firstAttribute="height" constant="150" id="Vpi-Sf-7n1"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DPl-jY-C2O" appends="YES" id="jRj-O6-aQQ"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCl-Db-kvJ">
+                                <rect key="frame" x="37" y="183" width="340" height="40"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6Xw-yb-AN9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="actionUpdateProfilePictureButton" destination="KGk-i7-Jjw" eventType="touchUpInside" id="f1M-1K-3bc"/>
+                                    <outletCollection property="gestureRecognizers" destination="DPl-jY-C2O" appends="YES" id="qMl-Kb-rmk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pfb-VU-sPC" firstAttribute="centerX" secondItem="If9-qA-iYA" secondAttribute="centerX" id="1II-GE-If6"/>
+                            <constraint firstAttribute="bottom" secondItem="2OB-dF-Ra6" secondAttribute="bottom" id="Dwi-xR-fVc"/>
+                            <constraint firstItem="pfb-VU-sPC" firstAttribute="top" secondItem="If9-qA-iYA" secondAttribute="top" constant="25" id="EYB-Cx-l8S"/>
+                            <constraint firstItem="2OB-dF-Ra6" firstAttribute="top" secondItem="If9-qA-iYA" secondAttribute="top" id="H2H-eJ-Kcy"/>
+                            <constraint firstItem="RCl-Db-kvJ" firstAttribute="centerX" secondItem="If9-qA-iYA" secondAttribute="centerX" id="QVW-fo-Q7N"/>
+                            <constraint firstItem="RCl-Db-kvJ" firstAttribute="top" secondItem="pfb-VU-sPC" secondAttribute="bottom" constant="8" symbolic="YES" id="Vj3-pk-48a"/>
+                            <constraint firstAttribute="trailing" secondItem="RCl-Db-kvJ" secondAttribute="trailing" constant="37" id="WCn-KI-c3z"/>
+                            <constraint firstAttribute="bottom" secondItem="RCl-Db-kvJ" secondAttribute="bottom" constant="10" id="b3s-ov-hBa"/>
+                            <constraint firstItem="RCl-Db-kvJ" firstAttribute="leading" secondItem="If9-qA-iYA" secondAttribute="leading" constant="37" id="gdR-7H-fVG"/>
+                            <constraint firstItem="2OB-dF-Ra6" firstAttribute="leading" secondItem="If9-qA-iYA" secondAttribute="leading" id="nKR-Nr-kVQ"/>
+                            <constraint firstAttribute="trailing" secondItem="2OB-dF-Ra6" secondAttribute="trailing" id="yf1-P8-ns8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="If9-qA-iYA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0Ww-3h-9da"/>
+                    <constraint firstItem="If9-qA-iYA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7cw-aN-DFD"/>
+                    <constraint firstAttribute="bottom" secondItem="If9-qA-iYA" secondAttribute="bottom" id="ObK-NB-wMO"/>
+                    <constraint firstAttribute="trailing" secondItem="If9-qA-iYA" secondAttribute="trailing" id="hJ6-Vs-V6G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backroundImage" destination="2OB-dF-Ra6" id="5vn-UB-WZr"/>
+                <outlet property="updateProfilePictureButton" destination="RCl-Db-kvJ" id="Hoh-3Y-wde"/>
+                <outlet property="userImage" destination="pfb-VU-sPC" id="mJU-em-gTr"/>
+            </connections>
+            <point key="canvasLocation" x="596" y="-22"/>
+        </tableViewCell>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="DPl-jY-C2O"/>
+    </objects>
+    <resources>
+        <image name="Photo" width="640" height="426"/>
+        <image name="icon-personpng" width="95.5" height="94"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
