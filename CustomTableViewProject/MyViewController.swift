@@ -19,10 +19,29 @@ class MyViewController: UIViewController, PersonImageTableViewCellDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         imagePicker.delegate = self
         tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 1))
         tableView.register(PersonImageTableViewCell.self)
         tableView.register(PersonInfoTableViewCell.self)
+        
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(longPressCell))
+        tableView.addGestureRecognizer(longPress)
+        
+    }
+    
+    @objc func longPressCell(sender: UILongPressGestureRecognizer) {
+        
+        if sender.state == UIGestureRecognizer.State.began {
+            let touchPoint = sender.location(in: tableView)
+            if let indexPath = tableView.indexPathForRow(at: touchPoint) {
+                if indexPath.section == 0 {
+                    alertController()
+                    checkImage = false
+                }
+            }
+        }
     }
     
     func didButtonPressed() {

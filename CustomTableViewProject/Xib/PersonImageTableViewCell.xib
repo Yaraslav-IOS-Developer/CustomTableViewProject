@@ -24,10 +24,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="2OB-dF-Ra6">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="DPl-jY-C2O" appends="YES" id="cyh-3w-F2C"/>
-                                    <outletCollection property="gestureRecognizers" destination="DPl-jY-C2O" appends="YES" id="Pa2-hQ-cX3"/>
-                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-personpng" translatesAutoresizingMaskIntoConstraints="NO" id="pfb-VU-sPC">
                                 <rect key="frame" x="132" y="25" width="150" height="150"/>
@@ -36,9 +32,6 @@
                                     <constraint firstAttribute="width" secondItem="pfb-VU-sPC" secondAttribute="height" multiplier="1:1" id="RJf-X8-LwS"/>
                                     <constraint firstAttribute="height" constant="150" id="Vpi-Sf-7n1"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="DPl-jY-C2O" appends="YES" id="jRj-O6-aQQ"/>
-                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCl-Db-kvJ">
                                 <rect key="frame" x="37" y="183" width="340" height="40"/>
@@ -49,7 +42,6 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="actionUpdateProfilePictureButton" destination="KGk-i7-Jjw" eventType="touchUpInside" id="f1M-1K-3bc"/>
-                                    <outletCollection property="gestureRecognizers" destination="DPl-jY-C2O" appends="YES" id="qMl-Kb-rmk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,7 +76,6 @@
             </connections>
             <point key="canvasLocation" x="596" y="-22"/>
         </tableViewCell>
-        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="DPl-jY-C2O"/>
     </objects>
     <resources>
         <image name="Photo" width="640" height="426"/>
