@@ -39,7 +39,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6Xw-yb-AN9"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="actionUpdateProfilePictureButton" destination="KGk-i7-Jjw" eventType="touchUpInside" id="f1M-1K-3bc"/>
                                 </connections>
@@ -69,12 +68,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <gestureRecognizers/>
             <connections>
                 <outlet property="backroundImage" destination="2OB-dF-Ra6" id="5vn-UB-WZr"/>
                 <outlet property="updateProfilePictureButton" destination="RCl-Db-kvJ" id="Hoh-3Y-wde"/>
                 <outlet property="userImage" destination="pfb-VU-sPC" id="mJU-em-gTr"/>
             </connections>
-            <point key="canvasLocation" x="596" y="-22"/>
+            <point key="canvasLocation" x="-326.08695652173918" y="25.78125"/>
         </tableViewCell>
     </objects>
     <resources>

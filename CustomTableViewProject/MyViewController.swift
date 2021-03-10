@@ -9,69 +9,54 @@ import UIKit
 
 class MyViewController: UIViewController, PersonImageTableViewCellDelegate {
     
-    
-    
     @IBOutlet weak var tableView: UITableView!
+    
+    let userSettingArray = [
+        UserSettingModel(header: nil, row: [nil]),
+        UserSettingModel(header: "YOUR INFO", row:["FIRST NAME", "SECOND NAME", "MOBILE NUMBER", "EMAIL ADDRESS", ""]),
+        UserSettingModel(header: "CHANGE PASSWORD", row:["NEW PASWORD", "RETYPE NEW PASWWORD", "" ])
+    ]
+    
     
     var checkImage = false
     let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+
         imagePicker.delegate = self
         tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 1))
         tableView.register(PersonImageTableViewCell.self)
         tableView.register(PersonInfoTableViewCell.self)
-        
-        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(longPressCell))
-        tableView.addGestureRecognizer(longPress)
+        tableView.register(SaveButtonTableViewCell.self)
         
     }
     
-    @objc func longPressCell(sender: UILongPressGestureRecognizer) {
-        
-        if sender.state == UIGestureRecognizer.State.began {
-            let touchPoint = sender.location(in: tableView)
-            if let indexPath = tableView.indexPathForRow(at: touchPoint) {
-                if indexPath.section == 0 {
-                    alertController()
-                    checkImage = false
-                }
-            }
-        }
-    }
-    
-    func didButtonPressed() {
+    func buttonPressed() {
         alertController()
         checkImage = true
     }
+    func longButtonPressed() {
+        alertController()
+        checkImage = false
+    }
+    
 }
 
 // MARK: - Data sourse
 extension MyViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        3
+        userSettingArray.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        switch section  {
-        case 0: return nil
-        case 1: return "YOUR INFO"
-        case 2: return "CHANGE PASSWORD"
-        default:
-            return nil
-        }
+        return userSettingArray[section].header
     }
     
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        return userSettingArray[section].row.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -80,18 +65,32 @@ extension MyViewController: UITableViewDataSource {
             let cell = tableView.create(PersonImageTableViewCell.self, indexPath)
             cell.delegate = self
             return cell
-        }
-            
+        } else {
             let cell = tableView.create(PersonInfoTableViewCell.self, indexPath)
+            cell.infoForUserLabel.text = userSettingArray[indexPath.section].row[indexPath.row]
+            let textPlaceholder = userSettingArray[indexPath.section].row[indexPath.row]
+            cell.infoUserTextFild.placeholder =  "Enter" + " " + textPlaceholder!.capitalized
+
+            if indexPath.row == 4 {
+                
+                cell.infoUserTextFild.isHidden = true
+                cell.infoForUserLabel.isHidden = true
+                
+            }
             
-       return cell
- 
+            if indexPath.section == 2 && indexPath.row == 2  {
+                let cell = tableView.create(SaveButtonTableViewCell.self, indexPath)
+                return cell
+            }
+            
+            return cell
+        }  
     }
 }
 
 // MARK: - Table view delegate
 extension MyViewController: UITableViewDelegate {
-
+    
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         
         view.tintColor = #colorLiteral(red: 0.5362802744, green: 0.6920174956, blue: 0.8061967492, alpha: 1)
@@ -108,7 +107,6 @@ extension MyViewController: UITableViewDelegate {
             return 40
         }
     }
-    
 }
 // MARK: -  Work with image
 extension MyViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -137,4 +135,5 @@ extension MyViewController: UIImagePickerControllerDelegate, UINavigationControl
         picker.dismiss(animated: true, completion: nil)
     }
 }
+
 
