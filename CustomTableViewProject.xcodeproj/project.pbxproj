@@ -19,7 +19,6 @@
 		C4853E1C25ED189100989796 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4853E1B25ED189100989796 /* SceneDelegate.swift */; };
 		C4853E2125ED189100989796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4853E1F25ED189100989796 /* Main.storyboard */; };
 		C4853E2625ED189200989796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4853E2425ED189200989796 /* LaunchScreen.storyboard */; };
-		C4853E3825ED3F1500989796 /* ProfileSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4853E3725ED3F1500989796 /* ProfileSettingsTableViewController.swift */; };
 		C48946F525EE1EEF00D16DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48946F425EE1EEF00D16DA5 /* Assets.xcassets */; };
 		C48946FF25EE900100D16DA5 /* ViewController(extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = C48946FE25EE900100D16DA5 /* ViewController(extension).swift */; };
 		C4CB72B225F1350400E64131 /* PersonInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB72B025F1350400E64131 /* PersonInfoTableViewCell.swift */; };
@@ -41,7 +40,6 @@
 		C4853E2025ED189100989796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4853E2525ED189200989796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4853E2725ED189200989796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4853E3725ED3F1500989796 /* ProfileSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsTableViewController.swift; sourceTree = "<group>"; };
 		C48946F425EE1EEF00D16DA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C48946FE25EE900100D16DA5 /* ViewController(extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController(extension).swift"; sourceTree = "<group>"; };
 		C4CB72B025F1350400E64131 /* PersonInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoTableViewCell.swift; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 				C4510FAB25F12F1C00A5215C /* Xib */,
 				C416574925F0232F00DE65B1 /* Model */,
 				C4510FAC25F12F5D00A5215C /* MyViewController.swift */,
-				C4853E3725ED3F1500989796 /* ProfileSettingsTableViewController.swift */,
 				C416573A25F0112900DE65B1 /* Extension */,
 				C4853E2425ED189200989796 /* LaunchScreen.storyboard */,
 				C48946F425EE1EEF00D16DA5 /* Assets.xcassets */,
@@ -228,7 +225,6 @@
 				C4CB72B225F1350400E64131 /* PersonInfoTableViewCell.swift in Sources */,
 				C48946FF25EE900100D16DA5 /* ViewController(extension).swift in Sources */,
 				C416574725F0232000DE65B1 /* UserSettingModel.swift in Sources */,
-				C4853E3825ED3F1500989796 /* ProfileSettingsTableViewController.swift in Sources */,
 				C4853E1C25ED189100989796 /* SceneDelegate.swift in Sources */,
 				C4510FAD25F12F5D00A5215C /* MyViewController.swift in Sources */,
 				C416573C25F0116400DE65B1 /* UITableView(extension).swift in Sources */,

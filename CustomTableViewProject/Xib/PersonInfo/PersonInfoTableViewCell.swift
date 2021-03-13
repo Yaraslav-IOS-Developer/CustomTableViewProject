@@ -18,13 +18,13 @@ class PersonInfoTableViewCell: UITableViewCell  {
     override func awakeFromNib() {
         super.awakeFromNib()
         infoUserTextFild.delegate = self
-        
-        
-        
+        infoUserTextFild.tag = 0
+
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
+    
 }
 
 extension PersonInfoTableViewCell: UITextFieldDelegate {
@@ -64,8 +64,9 @@ extension PersonInfoTableViewCell: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
-        textField.resignFirstResponder()
         
+        textField.resignFirstResponder()
+
         return false
         
     }

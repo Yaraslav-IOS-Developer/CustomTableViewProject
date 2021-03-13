@@ -9,14 +9,18 @@ import UIKit
 
 class MyViewController: UIViewController, PersonImageTableViewCellDelegate {
     
+    
+   
+    
     @IBOutlet weak var tableView: UITableView!
     
     let userSettingArray = [
         UserSettingModel(header: nil, row: [nil]),
         UserSettingModel(header: "YOUR INFO", row:["FIRST NAME", "SECOND NAME", "MOBILE NUMBER", "EMAIL ADDRESS", ""]),
-        UserSettingModel(header: "CHANGE PASSWORD", row:["NEW PASWORD", "RETYPE NEW PASWWORD", "" ])
+        UserSettingModel(header: "CHANGE PASSWORD", row:["NEW PASSWORD", "RETYPE NEW PASSWORD", "" ])
     ]
     
+   
     
     var checkImage = false
     let imagePicker = UIImagePickerController()
@@ -32,6 +36,7 @@ class MyViewController: UIViewController, PersonImageTableViewCellDelegate {
         
     }
     
+
     func buttonPressed() {
         alertController()
         checkImage = true

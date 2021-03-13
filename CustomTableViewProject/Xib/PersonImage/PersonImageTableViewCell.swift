@@ -14,24 +14,22 @@ protocol PersonImageTableViewCellDelegate {
 
 class PersonImageTableViewCell: UITableViewCell {
     
-   // MARK: -  IBOutlet
-    @IBOutlet weak var backroundImage: UIImageView!
-    @IBOutlet weak var userImage: UIImageView!
-    @IBOutlet weak var updateProfilePictureButton: UIButton!
-    
-    var myViewController = MyViewController()
+    var longGesture = UILongPressGestureRecognizer()
     var delegate: PersonImageTableViewCellDelegate?
     
     
+    // MARK: -  IBOutlet
+    @IBOutlet weak var backroundImage: UIImageView!
+    @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var updateProfilePictureButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         setupUserImage()
         setupUpdateProfilePictureButton()
-        
+        userImage.isUserInteractionEnabled = false
     }
 
-    
     // MARK: - setup UI
     
     private func setupUserImage() {
@@ -52,17 +50,15 @@ class PersonImageTableViewCell: UITableViewCell {
         
     }
     
-    
-    
-    @IBAction func actionLongPressBackgroundImage(_ sender: UILongPressGestureRecognizer) {
-        delegate?.longButtonPressed()
-        print("longPressed")
+    @objc func didLongPress(sender: UILongPressGestureRecognizer) {
+        if sender.state == UIGestureRecognizer.State.began {
+            delegate?.longButtonPressed()
+        }
     }
-    
-  
-        
-    
-    
+    @IBAction func longPressButton(_ sender: UIButton) {
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(didLongPress))
+            self.addGestureRecognizer(longPress)
+    }
     @IBAction func actionUpdateProfilePictureButton() {
         delegate?.buttonPressed()
     }

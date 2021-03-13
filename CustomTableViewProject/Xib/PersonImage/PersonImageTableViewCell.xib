@@ -25,6 +25,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
                                 <gestureRecognizers/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WX-jd-xyf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="longPressButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PMk-kU-aYW"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-personpng" translatesAutoresizingMaskIntoConstraints="NO" id="pfb-VU-sPC">
                                 <rect key="frame" x="132" y="25" width="150" height="150"/>
                                 <gestureRecognizers/>
@@ -49,7 +56,11 @@
                             <constraint firstItem="pfb-VU-sPC" firstAttribute="centerX" secondItem="If9-qA-iYA" secondAttribute="centerX" id="1II-GE-If6"/>
                             <constraint firstAttribute="bottom" secondItem="2OB-dF-Ra6" secondAttribute="bottom" id="Dwi-xR-fVc"/>
                             <constraint firstItem="pfb-VU-sPC" firstAttribute="top" secondItem="If9-qA-iYA" secondAttribute="top" constant="25" id="EYB-Cx-l8S"/>
+                            <constraint firstAttribute="bottom" secondItem="2WX-jd-xyf" secondAttribute="bottom" id="FrT-XX-dli"/>
+                            <constraint firstAttribute="trailing" secondItem="2WX-jd-xyf" secondAttribute="trailing" id="G8v-ix-Xkw"/>
                             <constraint firstItem="2OB-dF-Ra6" firstAttribute="top" secondItem="If9-qA-iYA" secondAttribute="top" id="H2H-eJ-Kcy"/>
+                            <constraint firstItem="2WX-jd-xyf" firstAttribute="top" secondItem="If9-qA-iYA" secondAttribute="top" id="Mxu-Xn-wmv"/>
+                            <constraint firstItem="2WX-jd-xyf" firstAttribute="leading" secondItem="If9-qA-iYA" secondAttribute="leading" id="PWv-dj-dYs"/>
                             <constraint firstItem="RCl-Db-kvJ" firstAttribute="centerX" secondItem="If9-qA-iYA" secondAttribute="centerX" id="QVW-fo-Q7N"/>
                             <constraint firstItem="RCl-Db-kvJ" firstAttribute="top" secondItem="pfb-VU-sPC" secondAttribute="bottom" constant="8" symbolic="YES" id="Vj3-pk-48a"/>
                             <constraint firstAttribute="trailing" secondItem="RCl-Db-kvJ" secondAttribute="trailing" constant="37" id="WCn-KI-c3z"/>
@@ -60,6 +71,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <gestureRecognizers/>
                 <constraints>
                     <constraint firstItem="If9-qA-iYA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0Ww-3h-9da"/>
                     <constraint firstItem="If9-qA-iYA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7cw-aN-DFD"/>
