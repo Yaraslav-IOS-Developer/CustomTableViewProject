@@ -7,23 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C416573C25F0116400DE65B1 /* UITableView(extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = C416573B25F0116400DE65B1 /* UITableView(extension).swift */; };
+		C416573F25F011C000DE65B1 /* UIView(extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = C416573E25F011C000DE65B1 /* UIView(extension).swift */; };
+		C416574725F0232000DE65B1 /* UserSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416574625F0232000DE65B1 /* UserSettingModel.swift */; };
+		C4510FA825F12C7000A5215C /* PersonImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4510FA625F12C7000A5215C /* PersonImageTableViewCell.swift */; };
+		C4510FA925F12C7000A5215C /* PersonImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4510FA725F12C7000A5215C /* PersonImageTableViewCell.xib */; };
+		C4510FAD25F12F5D00A5215C /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4510FAC25F12F5D00A5215C /* MyViewController.swift */; };
+		C4747D6825F913D00048B2DA /* SaveButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4747D6625F913D00048B2DA /* SaveButtonTableViewCell.swift */; };
+		C4747D6925F913D00048B2DA /* SaveButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4747D6725F913D00048B2DA /* SaveButtonTableViewCell.xib */; };
 		C4853E1A25ED189100989796 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4853E1925ED189100989796 /* AppDelegate.swift */; };
 		C4853E1C25ED189100989796 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4853E1B25ED189100989796 /* SceneDelegate.swift */; };
-		C4853E1E25ED189100989796 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4853E1D25ED189100989796 /* ViewController.swift */; };
 		C4853E2125ED189100989796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4853E1F25ED189100989796 /* Main.storyboard */; };
-		C4853E2325ED189200989796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4853E2225ED189200989796 /* Assets.xcassets */; };
 		C4853E2625ED189200989796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4853E2425ED189200989796 /* LaunchScreen.storyboard */; };
+		C48946F525EE1EEF00D16DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48946F425EE1EEF00D16DA5 /* Assets.xcassets */; };
+		C48946FF25EE900100D16DA5 /* ViewController(extension).swift in Sources */ = {isa = PBXBuildFile; fileRef = C48946FE25EE900100D16DA5 /* ViewController(extension).swift */; };
+		C4CB72B225F1350400E64131 /* PersonInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB72B025F1350400E64131 /* PersonInfoTableViewCell.swift */; };
+		C4CB72B325F1350400E64131 /* PersonInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4CB72B125F1350400E64131 /* PersonInfoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C416573B25F0116400DE65B1 /* UITableView(extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView(extension).swift"; sourceTree = "<group>"; };
+		C416573E25F011C000DE65B1 /* UIView(extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView(extension).swift"; sourceTree = "<group>"; };
+		C416574625F0232000DE65B1 /* UserSettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingModel.swift; sourceTree = "<group>"; };
+		C4510FA625F12C7000A5215C /* PersonImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonImageTableViewCell.swift; sourceTree = "<group>"; };
+		C4510FA725F12C7000A5215C /* PersonImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonImageTableViewCell.xib; sourceTree = "<group>"; };
+		C4510FAC25F12F5D00A5215C /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		C4747D6625F913D00048B2DA /* SaveButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButtonTableViewCell.swift; sourceTree = "<group>"; };
+		C4747D6725F913D00048B2DA /* SaveButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveButtonTableViewCell.xib; sourceTree = "<group>"; };
 		C4853E1625ED189100989796 /* CustomTableViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTableViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4853E1925ED189100989796 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4853E1B25ED189100989796 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C4853E1D25ED189100989796 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4853E2025ED189100989796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C4853E2225ED189200989796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4853E2525ED189200989796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4853E2725ED189200989796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48946F425EE1EEF00D16DA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C48946FE25EE900100D16DA5 /* ViewController(extension).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController(extension).swift"; sourceTree = "<group>"; };
+		C4CB72B025F1350400E64131 /* PersonInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoTableViewCell.swift; sourceTree = "<group>"; };
+		C4CB72B125F1350400E64131 /* PersonInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonInfoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +57,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C416573A25F0112900DE65B1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C48946FE25EE900100D16DA5 /* ViewController(extension).swift */,
+				C416573B25F0116400DE65B1 /* UITableView(extension).swift */,
+				C416573E25F011C000DE65B1 /* UIView(extension).swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C416574925F0232F00DE65B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C416574625F0232000DE65B1 /* UserSettingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4510FAB25F12F1C00A5215C /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				C4747D6B25F91F900048B2DA /* PersonImage */,
+				C4747D6C25F91FB50048B2DA /* PersonInfo */,
+				C4747D6D25F91FD50048B2DA /* SaveButton */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		C4747D6B25F91F900048B2DA /* PersonImage */ = {
+			isa = PBXGroup;
+			children = (
+				C4510FA625F12C7000A5215C /* PersonImageTableViewCell.swift */,
+				C4510FA725F12C7000A5215C /* PersonImageTableViewCell.xib */,
+			);
+			path = PersonImage;
+			sourceTree = "<group>";
+		};
+		C4747D6C25F91FB50048B2DA /* PersonInfo */ = {
+			isa = PBXGroup;
+			children = (
+				C4CB72B025F1350400E64131 /* PersonInfoTableViewCell.swift */,
+				C4CB72B125F1350400E64131 /* PersonInfoTableViewCell.xib */,
+			);
+			path = PersonInfo;
+			sourceTree = "<group>";
+		};
+		C4747D6D25F91FD50048B2DA /* SaveButton */ = {
+			isa = PBXGroup;
+			children = (
+				C4747D6625F913D00048B2DA /* SaveButtonTableViewCell.swift */,
+				C4747D6725F913D00048B2DA /* SaveButtonTableViewCell.xib */,
+			);
+			path = SaveButton;
+			sourceTree = "<group>";
+		};
 		C4853E0D25ED189100989796 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +133,13 @@
 			children = (
 				C4853E1925ED189100989796 /* AppDelegate.swift */,
 				C4853E1B25ED189100989796 /* SceneDelegate.swift */,
-				C4853E1D25ED189100989796 /* ViewController.swift */,
 				C4853E1F25ED189100989796 /* Main.storyboard */,
-				C4853E2225ED189200989796 /* Assets.xcassets */,
+				C4510FAB25F12F1C00A5215C /* Xib */,
+				C416574925F0232F00DE65B1 /* Model */,
+				C4510FAC25F12F5D00A5215C /* MyViewController.swift */,
+				C416573A25F0112900DE65B1 /* Extension */,
 				C4853E2425ED189200989796 /* LaunchScreen.storyboard */,
+				C48946F425EE1EEF00D16DA5 /* Assets.xcassets */,
 				C4853E2725ED189200989796 /* Info.plist */,
 			);
 			path = CustomTableViewProject;
@@ -124,8 +202,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4CB72B325F1350400E64131 /* PersonInfoTableViewCell.xib in Resources */,
 				C4853E2625ED189200989796 /* LaunchScreen.storyboard in Resources */,
-				C4853E2325ED189200989796 /* Assets.xcassets in Resources */,
+				C48946F525EE1EEF00D16DA5 /* Assets.xcassets in Resources */,
+				C4510FA925F12C7000A5215C /* PersonImageTableViewCell.xib in Resources */,
+				C4747D6925F913D00048B2DA /* SaveButtonTableViewCell.xib in Resources */,
 				C4853E2125ED189100989796 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +218,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4853E1E25ED189100989796 /* ViewController.swift in Sources */,
+				C4510FA825F12C7000A5215C /* PersonImageTableViewCell.swift in Sources */,
+				C4747D6825F913D00048B2DA /* SaveButtonTableViewCell.swift in Sources */,
+				C416573F25F011C000DE65B1 /* UIView(extension).swift in Sources */,
 				C4853E1A25ED189100989796 /* AppDelegate.swift in Sources */,
+				C4CB72B225F1350400E64131 /* PersonInfoTableViewCell.swift in Sources */,
+				C48946FF25EE900100D16DA5 /* ViewController(extension).swift in Sources */,
+				C416574725F0232000DE65B1 /* UserSettingModel.swift in Sources */,
 				C4853E1C25ED189100989796 /* SceneDelegate.swift in Sources */,
+				C4510FAD25F12F5D00A5215C /* MyViewController.swift in Sources */,
+				C416573C25F0116400DE65B1 /* UITableView(extension).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7FWE3GPY5W;
 				INFOPLIST_FILE = CustomTableViewProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Yaroslav.CustomTableViewProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7FWE3GPY5W;
 				INFOPLIST_FILE = CustomTableViewProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Yaroslav.CustomTableViewProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
